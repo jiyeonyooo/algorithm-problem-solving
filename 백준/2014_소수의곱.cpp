@@ -37,7 +37,7 @@ int main() {
             primes.pop();
             cnt++;
 
-            for (int j = 0; j < k; j++) {
+            for (int j = 0; j < k; j++) { //중복이 아닌 경우만 수행
                 if (now * p[j] >= 2147483647) continue;
                 else primes.push(now * p[j]);
             }
